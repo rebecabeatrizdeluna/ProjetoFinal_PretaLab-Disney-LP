@@ -24,13 +24,13 @@ const media = ((nota1 + note2 + note3 + note4) / 4)
 
 if ( media === 0){
   mensagem = "Infelizmente você zerou a prova :(";
-} else if (media = 0,1 && media <= 3){
+} else if (media = 0,1 || media <= 3){
   mensagem = "Caramba, deu ruim. Você obteve média " + media +"! Estude mais e tente novamente!";
-} else if (media = 3,1 && media <= 5,9){
+} else if (media = 3,1 || media <= 5,9){
   mensagem = "Você obteve media " + media + "! Falta pouco!";
-} else if (media = 6 && media <= 7){
+} else if (media = 6 || media <= 7){
   mensagem = "Você está na média com " + media + "!";
-} else if (media = 7,1 && media <= 9,9){
+} else if (media = 7,1 || media <= 9,9){
   mensagem = "Notão! Sua média é " + media + "!";
 } else if (media === 10){
   mensagem = "Hoje é seu aniversário? Pq você está de parabéns! Média 10!!"
