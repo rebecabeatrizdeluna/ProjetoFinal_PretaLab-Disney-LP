@@ -1,6 +1,6 @@
 body {
-  background-color: #CA7B42;
-  color: #555;
+  background-color: #A2A182;
+  color: #F4ECE2;
   font-size: 1.1em;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   width: 100%;
@@ -27,7 +27,7 @@ p {
 }
 
 section {
-  border: thick double #521908;
+  border: thick double #687259;
   margin-bottom: 30px;
   width: 50%;
 }
