@@ -13,14 +13,14 @@
 */
 function calcularMedia() {
   const nota1 = parseFloat(document.getElementById("nota1").value);
-  const note2 = parseFloat(document.getElementById("nota2").value);
-  const note3 = parseFloat(document.getElementById("nota3").value);
-  const note4 = parseFloat(document.getElementById("nota4").value);
+  const nota2 = parseFloat(document.getElementById("nota2").value);
+  const nota3 = parseFloat(document.getElementById("nota3").value);
+  const nota4 = parseFloat(document.getElementById("nota4").value);
 
   let mensagem = "";
   // evite mexer no código acima!
 
-const media = ((nota1 + note2 + note3 + note4) / 4)
+const media = ((nota1 + nota2 + nota3 + nota4) / 4)
 
 if (media === 0) {
   mensagem = ("Infelizmente, você obteve zero de média. ");
@@ -29,15 +29,15 @@ if (media === 0) {
 } else if (media >= 3.1 && media <= 5.9) {
   mensagem = (`Você obteve média ${media}!`);
 } else if (media >= 6 && media <= 7) {
-  mensagem = (`Você está na média com ${media}`);
+  mensagem = (`Você está na média com ${media}!`);
 } else if (media >= 7.1 && media <= 9.9) {
   mensagem = (`Notão! Sua média é ${media}!`);
 } else if (media === 10) {
   mensagem = ("Voce obteve nota 10 de média. Parabéns!");
-} else if (nota1 || note2 || note3 || note4 > 10) {
-  mensagem = ("O maior número possível para preencher este campo é 10. Corrija e insira uma nova nota.");
+} else if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10 || nota3 < 0 || nota3 > 10 || nota4 < 0 || nota4 > 10) {
+  mensagem = ("Você não pode inserir uma nota menor que 0 ou maior que 10.");
 } else {
-mensagem = ("Você precisa inserir um número entre 0 e 10 para que sua média seja calculada.");
+  mensagem = ("Você precisa inserir um número entre 0 e 10 para que sua média seja calculada.");
 }
 
   // evite mexer na linha de código abaixo!
