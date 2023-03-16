@@ -23,21 +23,21 @@ function calcularMedia() {
 const media = ((nota1 + nota2 + nota3 + nota4) / 4)
 
 if (media === 0) {
-  mensagem = ("Infelizmente, você obteve zero de média. ");
+  mensagem = "Infelizmente, você obteve zero de média. ";
+} else if (nota1 < 0 || nota2 < 0 || nota3 < 0 || nota4 < 0) {
+  mensagem = "Você não pode inserir uma nota menor que 0 ou maior que 10.";
 } else if (media >= 0.1 && media <= 3) {
-  mensagem = (`Você obteve média ${media}! Estude mais e tente novamente!`);
+  mensagem = `Você obteve média ${media}! Estude mais e tente novamente!`;
 } else if (media >= 3.1 && media <= 5.9) {
-  mensagem = (`Você obteve média ${media}!`);
+  mensagem = `Você obteve média ${media}!`;
 } else if (media >= 6 && media <= 7) {
-  mensagem = (`Você está na média com ${media}!`);
+  mensagem = `Você está na média com ${media}!`;
 } else if (media >= 7.1 && media <= 9.9) {
-  mensagem = (`Notão! Sua média é ${media}!`);
+  mensagem = `Notão! Sua média é ${media}!`;
 } else if (media === 10) {
-  mensagem = ("Voce obteve nota 10 de média. Parabéns!");
-} else if (nota1 < 0 || nota1 > 10 || nota2 < 0 || nota2 > 10 || nota3 < 0 || nota3 > 10 || nota4 < 0 || nota4 > 10) {
-  mensagem = ("Você não pode inserir uma nota menor que 0 ou maior que 10.");
+  mensagem = "Voce obteve nota 10 de média. Parabéns!";
 } else {
-  mensagem = ("Você precisa inserir um número entre 0 e 10 para que sua média seja calculada.");
+  mensagem = "Você precisa inserir um número entre 0 e 10 para que sua média seja calculada.";
 }
 
   // evite mexer na linha de código abaixo!
